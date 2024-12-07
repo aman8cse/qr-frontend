@@ -1,0 +1,94 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+}
+  
+* {
+    transition: 0.2s;
+}
+.dashboard-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#teacher-name {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.classes-block, .attendance-block {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ff6ec4;
+    border-radius: 10px;
+}
+.classes-block:hover, .attendance-block:hover {
+    border: 3px solid #7873f5;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+ 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e3e3e3;
+    margin: 10px 0;
+    padding: none;
+    border-radius: 5px;
+}
+
+.active {
+    background: #8b8b8b;
+}
+.button-none{
+    border: none;
+    background: none;
+    width: 100%;
+    height: 40px;
+}
+
+table {
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+thead {
+    background: #f2f2f2;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
